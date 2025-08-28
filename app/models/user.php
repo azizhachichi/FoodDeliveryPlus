@@ -29,7 +29,14 @@ class User {
             return $user;
         }
 
+        
+
         return false;
     }
+    public function getRestaurants() {
+    $stmt = $this->conn->prepare("SELECT id, nom FROM users WHERE role = 'restaurant'");
+    $stmt->execute();
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
     
 }

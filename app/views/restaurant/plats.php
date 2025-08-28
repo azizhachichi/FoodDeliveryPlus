@@ -42,7 +42,7 @@
                     <div class="card p-3">
                         <h5 class="card-title"><?= htmlspecialchars($plat['nom']) ?></h5>
                         <p class="card-text"><?= nl2br(htmlspecialchars($plat['description'])) ?></p>
-                        <p class="card-text fw-bold">Prix : <?= number_format($plat['prix'], 2) ?> DH</p>
+                        <p class="card-text fw-bold">Prix : <?= number_format($plat['prix'], 2) ?> TND</p>
                         <a href="index.php?action=supprimer_plat&id=<?= $plat['id'] ?>" class="btn btn-danger btn-sm" onclick="return confirm('Voulez-vous vraiment supprimer ce plat ?');">Supprimer</a>
                         <a href="index.php?action=modifier_plat&id=<?= $plat['id'] ?>" class="btn btn-warning btn-sm me-2">Modifier</a>
 

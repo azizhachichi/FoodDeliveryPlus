@@ -39,7 +39,7 @@
         </div>
 
         <div class="mb-3">
-            <label for="prix" class="form-label">Prix (en Dhs)</label>
+            <label for="prix" class="form-label">Prix (en TND)</label>
             <input type="number" name="prix" id="prix" step="0.01" class="form-control" required placeholder="Ex: 59.90">
         </div>
 

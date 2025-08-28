@@ -8,7 +8,7 @@ class PlatController {
         $this->model = new Plat();
     }
 
-    // Affiche tous les plats du restaurant connecté
+    
     public function index() {
         if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'restaurant') {
             header('Location: index.php?action=login');
@@ -19,7 +19,7 @@ class PlatController {
         include 'app/views/restaurant/plats.php';
     }
 
-    // Ajouter un plat (formulaire + traitement)
+    
     public function ajouter() {
         if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'restaurant') {
             header('Location: index.php?action=login');
@@ -44,7 +44,7 @@ class PlatController {
         }
     }
 
-    // Modifier un plat (formulaire + traitement)
+   
     public function modifier() {
         if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'restaurant') {
             header('Location: index.php?action=login');
@@ -77,7 +77,7 @@ class PlatController {
         }
     }
 
-    // Supprimer un plat
+ 
     public function supprimer() {
         if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'restaurant') {
             header('Location: index.php?action=login');
@@ -91,4 +91,15 @@ class PlatController {
         header('Location: index.php?action=restaurant_plats');
         exit();
     }
+    public function voirPlatsParRestaurant() {
+    $restaurantId = $_GET['id'] ?? null;
+    if ($restaurantId) {
+        $plats = $this->model->getByRestaurant($restaurantId);
+        include 'app/views/client/plats_par_restaurant.php';
+    } else {
+        echo "Restaurant non trouvé.";
+    }
+}
+
+
 }

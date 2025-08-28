@@ -41,7 +41,7 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'livreur') {
             <div class="card p-4">
                 <h5 class="card-title">📦 Commandes assignées</h5>
                 <p class="card-text">Voir toutes les commandes que vous devez livrer.</p>
-                <a href="#" class="btn btn-primary disabled">À implémenter</a>
+                <a href="#" class="btn btn-primary disabled">Commandes assignées</a>
             </div>
         </div>
 
@@ -49,7 +49,7 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'livreur') {
             <div class="card p-4">
                 <h5 class="card-title">✅ Commandes livrées</h5>
                 <p class="card-text">Voir l'historique de vos livraisons terminées.</p>
-                <a href="#" class="btn btn-success disabled">À implémenter</a>
+                <a href="#" class="btn btn-success disabled">Commandes livrées</a>
             </div>
         </div>
 

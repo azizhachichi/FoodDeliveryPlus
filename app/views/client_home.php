@@ -9,7 +9,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'client') {
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Accueil Client - FoodDelivery+</title>
+    <title>Accueil Client - Food+</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
@@ -27,7 +27,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'client') {
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container">
-        <a class="navbar-brand" href="#">FoodDelivery+</a>
+        <a class="navbar-brand" href="#">Food+</a>
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
@@ -42,34 +42,14 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'client') {
     <div class="text-center mb-5">
         <h1>Bienvenue, cher client !</h1>
         <p class="text-muted">Découvrez les restaurants et plats disponibles.</p>
+        <a href="index.php?action=restaurants" class="btn btn-primary">Voir les restaurants</a>
+        <a href="" class="btn btn-primary">Voir l'historique</a>
+        <a href="" class="btn btn-primary">Voir l'etat d'une commande</a>
+
+        
     </div>
 
-    <div class="row">
-        <!-- Exemple de restaurants (à connecter avec DB si tu veux) -->
-        <div class="col-md-4 mb-4">
-            <div class="card shadow-sm">
-                <img src="public/images/restaurant1.jpg" class="card-img-top" alt="Restaurant">
-                <div class="card-body">
-                    <h5 class="card-title">Pizza Napoli</h5>
-                    <p class="card-text">Les meilleures pizzas italiennes de la ville.</p>
-                    <a href="#" class="btn btn-primary">Voir les plats</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4 mb-4">
-            <div class="card shadow-sm">
-                <img src="public/images/restaurant2.jpg" class="card-img-top" alt="Restaurant">
-                <div class="card-body">
-                    <h5 class="card-title">Sushi House</h5>
-                    <p class="card-text">Spécialités japonaises fraîches et savoureuses.</p>
-                    <a href="#" class="btn btn-primary">Voir les plats</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Tu peux dupliquer pour ajouter d'autres restaurants dynamiquement -->
-    </div>
+   
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

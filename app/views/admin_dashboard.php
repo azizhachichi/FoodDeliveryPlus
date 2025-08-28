@@ -6,7 +6,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Tableau de bord - Admin | FoodDelivery+</title>
+    <title>Tableau de bord - Admin | Food+</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
@@ -49,7 +49,7 @@
             <div class="card p-4">
                 <h5 class="card-title">🍽️ Voir tous les plats</h5>
                 <p class="card-text">Visualiser l'ensemble des plats ajoutés par les restaurants.</p>
-                <a href="#" class="btn btn-primary disabled">Fonction à implémenter</a>
+                <a href="#" class="btn btn-primary disabled">Voir tous les plats</a>
             </div>
         </div>
 
@@ -57,7 +57,7 @@
             <div class="card p-4">
                 <h5 class="card-title">📊 Statistiques</h5>
                 <p class="card-text">Voir l’activité générale de la plateforme (bientôt disponible).</p>
-                <a href="#" class="btn btn-secondary disabled">À venir</a>
+                <a href="#" class="btn btn-secondary disabled">Statistiques</a>
             </div>
         </div>
 

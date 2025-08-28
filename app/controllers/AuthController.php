@@ -63,6 +63,15 @@ class AuthController {
         }
     }
 
+    
+public function showRestaurants() {
+    require_once 'app/models/User.php';
+    $this->userModel = new User();
+    $restaurants = $this->userModel->getRestaurants();
+    include 'app/views/client/restaurants.php';
+}
+
+
     public function logout() {
         session_destroy();
         header('Location: index.php?action=login');
