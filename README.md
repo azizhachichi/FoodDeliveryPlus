@@ -10,3 +10,8 @@ Livreur : accède aux commandes en attente de livraison et met à jour leur stat
 Administrateur : supervise les utilisateurs (clients, restaurants, livreurs), contrôle les restaurants et assure la gestion globale du système.
 
 Le projet est pensé pour être simple à utiliser tout en offrant une base solide pour évoluer vers une application de livraison moderne (paiement en ligne, notifications, tracking temps réel).
+
+## 📚 Documentation
+
+- 📄 [Rapport UML du projet](Rapport_UML_FoodDeliveryPlus.pdf)
+
