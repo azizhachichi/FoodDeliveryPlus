@@ -11,7 +11,7 @@ Administrateur : supervise les utilisateurs (clients, restaurants, livreurs), co
 
 Le projet est pensé pour être simple à utiliser tout en offrant une base solide pour évoluer vers une application de livraison moderne (paiement en ligne, notifications, tracking temps réel).
 
-## 📚 Documentation
+##  Documentation
 
 - 📄 [Rapport UML du projet](Rapport_UML_FoodDeliveryPlus.pdf)
 
